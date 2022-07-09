@@ -1,5 +1,5 @@
 #include<iostream>
-#include<math>
+#include<cmath>
 
 using namespace std;
 
@@ -11,7 +11,7 @@ class equation {
         inline void display();
         inline void equals(float x, float y);
         inline void imag();
-        inline void equation::real(float a, float b, float det);
+        inline void real(float a, float b, float det);
 };
 
 inline void equation::get_data(float x, float y, float z) {
@@ -57,9 +57,9 @@ int main(void) {
         std::cout<<"linear roots=\n";
     }
     else {
-        float det = (bb*bb) - (4*aa*cc)
+        float det = (bb*bb) - (4*aa*cc);
         if (det == 0) {
-            eq.equals(aa,bb)
+            eq.equals(aa,bb);
         }
         else if(det<0) {
             eq.imag();
