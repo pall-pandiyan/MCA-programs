@@ -1,5 +1,5 @@
 #include<iostream>
-#include<cmath>
+#include<math.h>
 
 using namespace std;
 
@@ -51,7 +51,7 @@ int main(void) {
     std::cin>>aa>>bb>>cc;
     eq.get_data(aa, bb, cc);
     eq.display();
-    
+
     if (aa == 0) {
         float temp = cc/bb;
         std::cout<<"linear roots=\n";

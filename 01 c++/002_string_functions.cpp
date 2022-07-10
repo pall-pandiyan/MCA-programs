@@ -1,7 +1,7 @@
-#include <iostream>
+#include <iostream.h>
+#include<conio.h>
 #include <string.h>
 #include <stdio.h>
-#include <cmath>
 
 using namespace std;
 
@@ -20,7 +20,7 @@ class string {
         int operator>(string a);
 };
 
-istream&operator>>(istream&in, string&s) {
+istream&operator>>(istream& in, string& s) {
     gets(s, str);
     return in;
 }
